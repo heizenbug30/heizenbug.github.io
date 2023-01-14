@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>메인</title>
+
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/grid.css">
+	<link rel="stylesheet" href="./css/main.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+	<style>
+		@keyframes fadein {
+	from{
+		opacity:0;
+		transform: translateY(70%);
+	}
+	to{
+		opacity:1;
+		transform: translateY(0);
+	}
+  }
+  
+  .fadein{
+  animation: fadein 0.75s ease-in 0.3s forwards;
+  }
+  	</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="header-wrap">
+			<h1><a href="#"><img src="./assets/logoheizenbug.svg" alt=""></a></h1>
+			<nav class="main-navigation">
+				<!-- <a href="#">디자인스낵</a> -->
+				<!-- <a href="#"></a> -->
+				<a href="#">프로젝트</a>
+				<div class="s-intro__notify">
+					<button type="button" class="btn--stroke btn--small ss-modal-trigger">
+						이력서 다운로드
+					</button>
+				</div>
+
+			</nav>
+			<button class="more-btn">
+				<i class="icon"></i>
+			</button>
+		</div>
+	</header>
+
+	<div class="page">
+
+		<!-- intro
+		================================================== -->
+		<section id="intro" class="s-intro">
+
+			<div class="s-intro__slider swiper-container">
+				<div class="swiper-wrapper">
+					<div class="s-intro__slide swiper-slide" style="background-image: url(images/slides/slide-01.jpg);"></div>
+					<div class="s-intro__slide swiper-slide bg-opacity-50" style="background-image: url(images/slides/slide-02.jpg);"></div>
+					<div class="s-intro__slide swiper-slide bg-opacity-10" style="background-image: url(images/slides/slide-03.jpg);"></div>
+				</div>
+			</div>
+
+
+			<div class="row s-intro__content">
+				<div class="column">
+
+					<div class="text-pretitle">
+						Nice to meet you.
+					</div>
+
+					<h1 class="slideup">
+						스토리가 있는 브랜딩<br>
+						사용자를 고려한 UIUX, <br>
+						익사이팅한 인터렉션<br>
+						풀스텍을 향해 갑니다.
+					</h1>
+					<p class="slideup">I am preparing <br>
+						something exciting <br>
+						& amazing for you.</p>
+
+				</div>
+			</div> <!-- s-intro__content -->
+
+			<div class="s-intro__scroll">
+				<a href="#hidden" class="smoothscroll">
+					Scroll For More
+				</a>
+			</div> <!-- s-intro__scroll -->
+
+		</section> <!-- end s-intro -->
+
+		<section class="introgr">
+			<div class="row">
+
+				<div class="column lg-4 md-4 tab-12 back slideup">
+					<h5>시작은 편집디자인으로
+						부터</h5>
+					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+				</div>
+				<div class="column lg-4 md-4 tab-12 back slideup">
+					<h5>시작은 편집디자인으로
+						부터</h5>
+					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+				</div>
+				<div class="column lg-4 md-4 tab-12 back slideup">
+					<h5>다양한 플랫폼 디자인
+						과 프로토타이핑 구사</h5>
+					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+				</div>
+				<div class="introgrback column lg-12 md-12 tab-12"></div>
+
+			</div>
+		</section>
+
+		<!-- storyfir
+		================================================== -->
+		<section class="storyfir">
+			<div class="row">
+				
+				<div class="column lg-6 md-6 tab-12 slideup">
+					<h2 class="title">콘텐츠 기획부터<br>
+						디자인 시스템<br>
+						UIUX까지 디자인<br>
+						전반을 관리</h2>
+					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+					<div class="project">
+						<ul>
+							<li>nameing</li>
+							<li>C.I, B.I</li>
+							<li>Color system</li>
+							<li>advertising</li>
+							<li>book design</li>
+							<li>key visual grapic</li>
+						</ul>
+					</div>
+				</div>
+			
+				<div class="column lg-6 md-6 tab-12">
+					<img src="./images/storyfir_img.png" alt="">
+				</div>
+				<div class="storyfir-bg column lg-12 md-12 tab-12 desktop"></div>
+			</div>
+		</section>
+
+		<!-- storysec2
+		================================================== -->
+		<section class="storysec2 smoothscroll">
+			<div class="row">
+				
+				<div class="circle column lg-12 md-12 tab-12"></div>
+
+				<div class="mobile">
+					<h2 >다양한 툴을 활용한 영상, 이미지 등 다양한 디자인 리소스제작과 활용</h2>
+					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+				</div>
+
+				<div class="column lg-4 md-4 tab-6">
+					<div class="story__contet__img"><img src="./images/dr-logo1.jpg" alt=""></div>
+					<div class="story__contet__img"><img src="./images/dr-logo2.jpg" alt=""></div>
+					<div class="story__contet__img mobile"><img src="./gif/ramenbig.gif" alt=""></div>
+				</div>
+
+				<div class="column lg-3 md-3 tab-6">
+					<div class="story__contet__img"><img src="./gif/han2mag.gif" alt=""></div>
+					<div class="story__contet__img"><img src="./images/dr-logo4.jpg" alt=""></div>
+				</div>
+
+				<div class="column lg-5 md-5 tab-12 circle_text slideup">
+					<div class="story__contet__img desktop"><img src="./gif/ramenbig.gif" alt=""></div>
+					<h2 class="desktop">다양한 툴을 활용한 영상, 이미지 등 다양한 디자인 리소스제작과 활용</h2>
+					<p class="desktop">네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+				</div>
+
+			</div>
+		</section>
+	
+		<!-- storysec-white
+		================================================== -->
+		<section class="storysec">
+			<div class="storysec-bg"></div>	
+			<div class="row">
+				<div class="column lg-6 md-6 tab-12 slideup">
+					<!-- <h1 class="section-header">2018</h1> -->
+					<h2>그리드 시스템 기반
+						베이직 디자인부터
+						비정형 디자인까지
+						자유로운 구사</h2>
+					<p>클라이언트가 언하는 브랜딩, 디자인, 디지털 광고 마케팅의 디자인
+						클라이언트가 언하는 브랜딩, 디자인, 디지털 광고 마케팅의 디자인
+						클라이언트가 언하는 브랜딩, 디자인, 디지털 광고 마케팅의 디자인</p>
+						<div class="project">
+							<ul>
+								<li>social media</li>
+								<li>advertising</li>
+								<li>lending page</li>
+								<li>homepage</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="column lg-6 md-6 tab-12">
+						<div class="story__contet__img"><img src="./gif/dr-port3.gif" alt=""></div>
+					</div>
+			</div>
+		</section>
+	
+		<section class="wid">
+			<div class="row">
+				<div class="column">
+					<div class="vspas1"></div>
+					<div class="vspas2_5"></div>
+					<img src="./images/Project.png" alt="">
+				</div>
+			</div>
+		</section>
+
+	</div><!-- page -->
+
+	<div class="body">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+					<div class="swiper-slide"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+	</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+	<footer>
+		<div class="row">
+				<h1>heizenbug30@gmail.com</h1>
+				<h2>010.2333.0331</h2>
+				<div class="tool">
+					<ul>
+						<li><img src="./images/ico/./ai.png" alt=""></li>
+						<li><img src="./images/ico/./ps.png" alt=""></li>
+						<li><img src="./images/ico/xd.png" alt=""></li>
+						<li><img src="./images/ico/./fig.png" alt=""></li>
+						<li><img src="./images/ico/./zep.png" alt=""></li>
+						<li><img src="./images/ico/./vs.png" alt=""></li>
+						<li><img src="./images/ico/boo.jpg" alt=""></li>
+						<li><img src="./images/ico/html.png" alt=""></li>
+						<li><img src="./images/ico/css.png" alt=""></li>
+						<li><img src="./images/ico/js.png" alt=""></li>
+						<li><img src="./images/ico/jquery.png" alt=""></li>
+					</ul>
+				</div>
+				<!-- 
+				<div class="testyoon">
+					<p>xs한글테스트입니다 qwertasdf</p>
+					<p>sm한글테스트입니다 qwertasdf</p>
+					<p>md h6한글테스트입니다 qwertasdf</p>
+					<p>lg h5한글테스트입니다 qwertasdf</p>
+					<p>xl h4한글테스트입니다 qwertasdf</p>
+					<p>xxl h3한글테스트입니다 qwertasdf</p>
+					<p>xxxl h2한글테스트입니다 qwertasdf</p>
+					<p>xxxxl h1한글테스트입니다 qwertasdf</p>
+					<p>dispaly한글테스트입니다 qwertasdf</p>
+				</div> -->
+		</div>
+
+	</footer>
+
+	<!-- jQuery 불러오기 -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/plugins.js"></script>
+
+</body>
+
+</html>
