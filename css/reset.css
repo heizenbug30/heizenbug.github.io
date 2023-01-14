@@ -29,7 +29,6 @@
 *{
   font-size  : var(--text-size);
   box-sizing : border-box;
-  -ms-overflow-style: none;
 }
 
 *::before,*::after{
@@ -391,7 +390,6 @@ html,
 body {
   height : 100%;
   overflow-x:hidden;
--webkit-overflow-scrolling:touch;
 }
 
 body {
