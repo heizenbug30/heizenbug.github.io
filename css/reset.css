@@ -30,8 +30,6 @@
   font-size  : var(--text-size);
   box-sizing : border-box;
   -ms-overflow-style: none;
-  -ms-content-zooming: none;
--ms-touch-action: pan-x pan-y;
 }
 
 *::before,*::after{
@@ -390,6 +388,7 @@ template {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   -ms-content-zooming: none;
+  -ms-touch-action: pan-x pan-y;
 }
 
 *,
