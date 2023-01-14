@@ -375,7 +375,7 @@ template {
  html {
   font-size  : var(--base-size);
   box-sizing : border-box;
-/*   scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
@@ -389,7 +389,10 @@ template {
 html,
 body {
   height : 100%;
-  overflow-x:hidden;
+overflow: hidden;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
