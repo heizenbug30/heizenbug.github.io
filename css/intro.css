@@ -1,0 +1,228 @@
+@import url(./reset2.css);
+/* ===================================================================
+ * # INTRO
+ *
+ *
+ * ------------------------------------------------------------------- */
+ .s-intro {
+    --header-height     : 8.8rem;
+    --logo-width        : 78px;
+    --text-display-size : 11.2rem;
+    --text-multiplier   : 1;
+    z-index             : 3;
+    background-color    : var(--color-background);
+    width               : 100%;
+    height              : 100vh;
+    min-height          : calc(25.5 * var(--space));
+    box-shadow          : 0 0.8px 0.8px rgba(0, 0, 0, 0.031), 
+                          0 1.9px 1.9px rgba(0, 0, 0, 0.044), 
+                          0 3.9px 3.9px rgba(0, 0, 0, 0.056), 
+                          0 8px 8px rgba(0, 0, 0, 0.069), 
+                          0 22px 22px rgba(0, 0, 0, 0.1);
+    overflow            : hidden;
+    position            : relative;
+}
+
+.s-intro a {
+    border : none;
+}
+
+.theme-particles .s-intro {
+    background-color : #0d0e0c;
+}
+
+.theme-particles .s-intro .s-intro__content {
+    pointer-events : none;
+}
+
+.theme-particles .s-intro .s-intro-content__bottom {
+    pointer-events : auto;
+}
+
+/* --------------------------------------------------------------------
+ * ## intro background
+ * -------------------------------------------------------------------- */
+.s-intro__bg {
+    display             : block;
+    position            : absolute;
+    top                 : 0;
+    left                : 0;
+    right               : 0;
+    bottom              : 0;
+    width               : 100%;
+    height              : 100%;
+    background-image    : url(../images/bg-static.jpg);
+    background-repeat   : no-repeat;
+    background-position : center;
+    background-size     : cover;
+}
+
+.s-intro__bg::before {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : black;
+    pointer-events : none;
+    opacity        : .2;
+}
+
+.s-intro__bg::after {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : linear-gradient(90deg, black 10%, rgba(0, 0, 0, 0) 100%);
+    pointer-events : none;
+    opacity        : .45;
+}
+
+/* --------------------------------------------------------------------
+ * ## intro slider
+ * -------------------------------------------------------------------- */
+.s-intro__slider {
+    display  : block;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    right    : 0;
+    bottom   : 0;
+    width    : 100%;
+    height   : 100%;
+}
+
+.s-intro__slide {
+    background-repeat   : no-repeat;
+    background-position : 50% 50%;
+    background-size     : cover;
+    position            : relative;
+}
+
+.s-intro__slide::before {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : black;
+    pointer-events : none;
+    opacity        : .2;
+}
+
+.s-intro__slide::after {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : linear-gradient(90deg, black 10%, rgba(0, 0, 0, 0) 100%);
+    pointer-events : none;
+    opacity        : .4;
+}
+
+.s-intro__slide.bg-opacity-10::before {
+    opacity : .1;
+}
+
+.s-intro__slide.bg-opacity-20::before {
+    opacity : .2;
+}
+
+.s-intro__slide.bg-opacity-30::before {
+    opacity : .3;
+}
+
+.s-intro__slide.bg-opacity-40::before {
+    opacity : .4;
+}
+
+.s-intro__slide.bg-opacity-50::before {
+    opacity : .5;
+}
+
+.s-intro__slide.bg-opacity-60::before {
+    opacity : .6;
+}
+
+.s-intro__slide.bg-opacity-70::before {
+    opacity : .7;
+}
+
+.s-intro__slide.bg-opacity-80::before {
+    opacity : .8;
+}
+
+.s-intro__slide.bg-opacity-90::before {
+    opacity : .9;
+}
+
+
+/* --------------------------------------------------------------------
+ * ## intro content
+ * -------------------------------------------------------------------- */
+.s-intro__content {
+    z-index        : 2;
+    align-items    : flex-start;
+    max-width      : var(--width-wider);
+    height         : 100vh;
+    padding-top    : 20vh;
+    padding-bottom : 15rem;
+    position       : relative;
+}
+
+.s-intro__content .text-pretitle,
+.s-intro__content .text-huge-title {
+    color : white;
+}
+
+.s-intro__content .text-pretitle::before {
+    background-color : white;
+}
+
+.s-intro__content-bottom {
+    display    : flex;
+    width      : calc(100% - 4rem);
+    margin-top : var(--vspace-2);
+}
+
+.s-intro__content-bottom-block {
+    margin-right : calc(var(--gutter) * 4);
+}
+
+.s-intro__content-bottom-block:last-child {
+    margin-right : 0;
+}
+
+.s-intro__content-bottom h5 {
+    font-size     : var(--text-size);
+    font-weight   : 300;
+    margin-top    : 0;
+    margin-bottom : var(--vspace-0_375);
+    color         : rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 768px;){
+    .s-intro__content h1{
+        font-size: var(--text-md);
+       }
+}
+    
+
