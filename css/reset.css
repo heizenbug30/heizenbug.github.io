@@ -81,8 +81,7 @@
  * type scale - ratio 1:2 | base: 16px
  * -------------------------------------------------------------------
  *
- * --text-display-3 = (77.40px)
- * --text-display-2 = (64.50px)
+
  * --text-display-1 = (53.75px)
  * --text-xxxl      = (44.79px)
  * --text-xxl       = (37.32px)
@@ -91,7 +90,7 @@
  * --text-md        = (21.60px)
  * --text-size      = (18.00px) BASE
  * --text-sm        = (15.00px)
- * --text-xs        = (12.50px)
+ * --text-xs        = (14.50px)
  *
  * -------------------------------------------------------------------- */
 
@@ -99,13 +98,6 @@
     --text-size        : var(--base-font-size);   
 	  --text-scale-ratio : 1.2;
 
-	
-	  /* --text-xs          : calc((var(--base-font-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
-	  --text-sm          : calc(var(--text-xs) * var(--text-scale-ratio));
-    --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
-    --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
-    --text-display-1: calc(var(--text-xl) * var(--text-scale-ratio)*1.5); */
   
     --text-xs          : calc(var(--text-sm) / 1.062);
 	  --text-sm          : calc(var(--text-md) / 1.062);
@@ -119,19 +111,19 @@
 
     
 
-	   /* widths for rows and containers
-	   */
-	   --width-full     : 100%;
-	   --width-max      : 1180px;
-	   --width-wide     : 1400px;
-	   --width-wider    : 1600px;
-	   --width-widest   : 1800px;
-	   --width-narrow   : 1000px;
-	   --width-narrower : 800px;
-   
-	   /* gutter
-		*/
-	   --gutter         : 2.2rem;
+	/* widths for rows and containers
+	*/
+	--width-full     : 100%;
+	--width-max      : 1180px;
+	--width-wide     : 1400px;
+	--width-wider    : 1600px;
+	--width-widest   : 1800px;
+	--width-narrow   : 1000px;
+	--width-narrower : 800px;
+
+	/* gutter
+	*/
+	--gutter         : 2.2rem;
 
     --color-black: #000000;
     --color-gray-19: #161616;
@@ -387,6 +379,7 @@ template {
 /*   scroll-behavior: smooth; */
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+ -webkit-overflow-scrolling:touch;
 
 }
 
