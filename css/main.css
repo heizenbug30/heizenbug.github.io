@@ -463,7 +463,7 @@ button.btn--stroke:hover {
 	font:var(--font-2)
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 786px){
 	.introgr .row{
 		height: 600px;
 		justify-items: center;
@@ -519,18 +519,23 @@ button.btn--stroke:hover {
 
 @media screen and (max-width: 786px){ 
 	.storyfir{
-		padding-top: var(--vspace-5);
-		 } 
+	padding-top: var(--vspace-5);
+	} 
 
-	.storyfir img{
-		width: 100%;
-		height: auto;
-		z-index: 97;
-	}
+	.vwcolumn{
+		width: 80%;
+		height: 80%;
+		padding-right: 0px;
+		position: relative;
+	 }
 
-	.storyfir-bg{
-		display: none;
-	}
+	 .vwcolumn img:last-child{
+		width: 60%;
+		height: 100%;
+		position: absolute;
+		top:0px;
+		right:-30vw;
+	 }
 }
 
 /* ===================================================================
