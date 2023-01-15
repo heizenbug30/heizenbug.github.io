@@ -1,3 +1,32 @@
+
+/* ===================================================================
+ * # page and section
+ *
+ *
+ * ------------------------------------------------------------------- */
+ .page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+section {
+	padding-top: var(--vspace-5);
+	padding-bottom: calc(2 *var(--vspace-5));
+}
+
+section.about h2{
+	color:var(--color-white);
+}
+section.about p {
+    color:var(--color-gray-13);
+}
+.storyfir, .storythe{
+	position: relative;
+}
+
+
 /* ===================================================================
  * # haeder
  *
@@ -55,10 +84,6 @@ a {
     --color-btn-stroke-hover : rgba(0, 0, 0, .25);
     --color-btn-stroke-text  : white;
 	display: inline-block;
-    /* z-index                  : 2; */
-    /* position                 : absolute;
-    top                      : 2.4rem;
-    right                    : 4rem; */
 }
 
 button.btn--stroke {
@@ -372,14 +397,35 @@ button.btn--stroke:hover {
 .s-intro__content .text-pretitle::before {
     background-color : white;
 }
+.s-intro__content h1{
+	margin: var(--vspace-1);
+	font-size: 6rem;
+}
+
+.s-intro__content .colorfont h1:nth-child(1){
+	color: rgba(148, 156, 255, .4);
+}
+.s-intro__content .colorfont h1:nth-child(2){
+	color: rgba(148, 156, 255, .6);
+}
+.s-intro__content .colorfont h1:nth-child(3){
+	color: rgba(148, 156, 255, .8);
+}
+.s-intro__content .colorfont h1:nth-child(4){
+	color: white;
+}
 
 @media screen and (max-width: 768px){
-    /* .s-intro__content h1{
+    .s-intro__content h1{
         font-size: 3rem;
+		margin: 0;
 		line-height: calc(3rem * 1.2);
 		letter-spacing: -0.5px;
 		word-spacing: -1px;
-       } */
+       }
+
+	   	
+
 }
 
 /* ===================================================================
@@ -387,43 +433,56 @@ button.btn--stroke:hover {
  * ------------------------------------------------------------------- */
 
 .introgr{
-	width: 100%;
-	height: 300px;
-	padding-top: 0px;
+	padding: 0rem 2rem;
 }
 
 .introgr .row{
-	height: 300px;
+	padding: 0rem 2rem;
+	width: 100%;
+	height:400px;
 	justify-items: center;
 	background: linear-gradient(to bottom, rgba(93,102,206,1), rgba(28,28,36,1) 100%);
+}
+.introgr .card{
+	justify-content: center;
+	text-align: center;
 }
 
 .introgrback{
 	display: block;
-	width: 50vw;
-	height: 300px;
+	width: 80vw;
+	height:400px;
 	background: linear-gradient(to bottom, rgba(93,102,206,1),  rgba(28,28,36,1) 100%);
 	position: absolute;
-	left: 0vw;
+	left: 0;
 	z-index: -88;
+}
+.dicon {
+	width: 16rem;
+	}
+
+.title {
+	margin-top: 0%;
+	font:var(--font-2)
 }
 
 @media screen and (max-width: 760px){
-	.introgr{
-		width: 100%;
-		height: 600px;
-		padding-top: 0px;
-	}
 
 	.introgr .row{
 		height: 600px;
 		justify-items: center;
 		background: linear-gradient(to bottom, rgba(93,102,206,1), rgba(28,28,36,1) 100%);
 	}
+
+	.introgrback{
+		height: 600px;
+	}
+
+	.dicon {
+		width: 8rem;
+		}
+		
 }
-
-
-
 
 /* ===================================================================
  * # storyfir
@@ -439,14 +498,6 @@ button.btn--stroke:hover {
 	color: var(--color-gray-18);
 }
 
-.text-pretitle {
-	font-family: var(--font-1);
-	font-weight: 400;
-	font-size: var(--text-sm);
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	color: var(--color-1);
-}
 
 .storyfir-bg{
 	display: block;
@@ -475,46 +526,16 @@ button.btn--stroke:hover {
 	}
 }
 
-
-
 /* ===================================================================
- * # page and section
- *
- *
- * ------------------------------------------------------------------- */
-.page {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	overflow: hidden;
-	position: relative;
-}
-section {
-	padding-top: var(--vspace-5);
-	padding-bottom: calc(2 *var(--vspace-5));
-}
-
-section.about h2{
-	color:var(--color-white);
-}
-section.about p {
-    color:var(--color-gray-13);
-}
-.storyfir, .storythe{
-	position: relative;
-}
-
-
-/* ===================================================================
- * # storysec2
+ * # storysec
  *
  *
  * ------------------------------------------------------------------- */	
- .storysec2{
+ .storysec{
 	background-color: #1C1C24;
 }
 
-.storysec2 h2{
+.storysec h2{
 	z-index: 66;
 }
 	.circle{
@@ -549,26 +570,26 @@ section.about p {
 
 
 /* ===================================================================
- * # storysec
+ * # storythi
  *
  *
  * ------------------------------------------------------------------- */
-.storysec{
+.storythi{
 	background-color: #fff;
 }
 
-.storysec h2{
+.storythi h2{
 	color: #000;
 }
 
- .storysec-bg{
+ .storythi-bg{
 	display: block;
 	background-image: url(../images/storyfirsbg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 400px;
-	height: 300px;
+	width: calc(400 - 10%);
+	height: calc(300 - 10%);
 	position: relative;
 	top: -200px;
 	left: 50px;
@@ -583,7 +604,6 @@ section.about p {
 		height: 50vw;
 		position: relative;
 		left: -5vw;
-		/* z-index: 9999;} */
 	}
 }
 
@@ -592,15 +612,6 @@ section.about p {
 	color: var(--color-gray-3);
 	position: relative;
 	top: 20px;
-}
-
-.text-pretitle {
-	font-family: var(--font-2);
-	font-weight: 400;
-	font-size: var(--text-sm);
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	color: var(--color-1);
 }
 
 p{
@@ -849,11 +860,50 @@ display: inline-block;
 }
 
 }
+
+
 /* ===================================================================
- * # keyframe
+ * # section-header
  *
  *
  * ------------------------------------------------------------------- */
 
+ .section-header {
+    padding-top   : var(--vspace-2_5);
+    margin-bottom : var(--vspace-1_75);
+    position      : relative;
+	font-size: large;
+}
 
-  
+
+.text-pretitle {
+	font-family: var(--font-2);
+	font-weight: 400;
+	font-size: var(--text-sm);
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	color: var(--color-1);
+}
+
+.section-header__pretitle{
+    z-index  : 1;
+    position : absolute;
+	top:0;
+}
+
+.section-header__pretitle {
+    margin-bottom : var(--vspace-1_5);
+}
+
+.section-header::before {
+    content        : attr(data-num);
+    font-family    : var(--font-3);
+    font-weight    : 600;
+    font-size      : 8em;
+    letter-spacing : -0.03em;
+    line-height    : 1;
+    color          : rgba(255, 255, 255, 0.3);
+    position       : absolute;
+    top            : 0;
+    left           : var(--gutter);
+}
