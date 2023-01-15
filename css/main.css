@@ -619,7 +619,7 @@ button.btn--stroke:hover {
 	}
 }
 
-.storysec .section-header{
+.storythi .section-header{
 	color: var(--color-gray-18);
 	color: var(--color-gray-3);
 	position: relative;
@@ -630,15 +630,15 @@ p{
 	padding-bottom: var(--vspace-1);
 }
 
-.storysec .project{
+.storythi .project{
 	color: var(--color-gray-18);
 }
 
-.storysec .story__contet__img img {
+.storythi .story__contet__img img {
 	width: 100%;
 	}
 
-	.storysec-bg{
+	.storythi-bg{
 		display: block;
 		background-image: url(../images/storyfirsbg.jpg);
 		background-repeat: no-repeat;
