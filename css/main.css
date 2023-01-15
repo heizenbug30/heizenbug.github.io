@@ -671,8 +671,6 @@ button.btn--stroke:hover {
 	}
 }
 
-
-
 /* ===================================================================
  * # storythi
  *
@@ -702,10 +700,11 @@ button.btn--stroke:hover {
 	position: relative;
 	right: -5vw;
 }
+
 @media screen and (max-width: 786px){ 
 	p{
 	padding-bottom: var(--vspace-1);
-}	
+	}	
 }
 
 /* ===================================================================
