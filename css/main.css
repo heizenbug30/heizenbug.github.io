@@ -682,6 +682,12 @@ button.btn--stroke:hover {
 	background-color: #fff;
 }
 
+.storythi .section-header{	
+	color: var(--color-gray-3);
+	position: relative;
+	top: 20px;
+}
+
 .storythi h2{
 	color: #000;
 }
@@ -700,7 +706,9 @@ button.btn--stroke:hover {
 	z-index: 9999;
 } 
 
-
+.storythi .project{
+	color: var(--color-gray-18);
+}
 
 @media screen and (max-width: 786px){ 
 	.storysec-bg{
@@ -709,20 +717,9 @@ button.btn--stroke:hover {
 		position: relative;
 		left: -5vw;
 	}
-}
-
-.storythi .section-header{	
-	color: var(--color-gray-3);
-	position: relative;
-	top: 20px;
-}
 
 p{
 	padding-bottom: var(--vspace-1);
-}
-
-.storythi .project{
-	color: var(--color-gray-18);
 }
 
 .storythi .story__contet__img img {
@@ -741,8 +738,7 @@ p{
 		top: -200px;
 		z-index: 9999;
 	} 
-	
-
+}
 
 /* ===================================================================
  * # wid
