@@ -680,12 +680,11 @@ button.btn--stroke:hover {
  * ------------------------------------------------------------------- */
 .storythi{
 	background-color: #fff;
+	position: relative;
 }
 
 .storythi .section-header{	
 	color: var(--color-gray-3);
-	position: relative;
-	top: 20px;
 }
 
 .storythi h2{
@@ -698,11 +697,11 @@ button.btn--stroke:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: calc(400 - 10%);
+	width: 20vw;
 	height: calc(300 - 10%);
-	position: relative;
-	top: -200px;
-	left: 50px;
+	position: absolute;
+	top: -10vw;
+	left: -10vw;
 	z-index: 9999;
 } 
 
@@ -715,11 +714,11 @@ button.btn--stroke:hover {
 	padding-bottom: var(--vspace-1);
 	}
 
-.storythi .story__contet__img img {
+	.storythi .story__contet__img img {
 	width: 100%;
 	}
 
-.storythi-bg{
+	.storythi-bg{
 	display: block;
 	background-image: url(../images/storyfirsbg.jpg);
 	background-repeat: no-repeat;
@@ -727,11 +726,12 @@ button.btn--stroke:hover {
 	background-size: cover;
 	width: 30vw;
 	height: auto;
-	position: relative;
-	top: -200px;
+	position: absolute;
+	top:-10vw;
+	left: -10vw;
 	z-index: 9999;
 	} 
-}
+}	
 
 /* ===================================================================
  * # wid
