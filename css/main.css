@@ -619,8 +619,7 @@ button.btn--stroke:hover {
 	}
 }
 
-.storythi .section-header{
-	color: var(--color-gray-18);
+.storythi .section-header{	
 	color: var(--color-gray-3);
 	position: relative;
 	top: 20px;
