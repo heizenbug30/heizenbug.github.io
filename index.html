@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>메인</title>
-
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
 
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/grid.css">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/intro.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -37,7 +37,7 @@
   	</style>
 </head>
 
-<body class="smoothscroll">
+<body>
 
 	<header>
 		<div class="header-wrap">
@@ -72,54 +72,41 @@
 					<div class="s-intro__slide swiper-slide bg-opacity-10" style="background-image: url(images/slides/slide-03.jpg);"></div>
 				</div>
 			</div>
-
-
 			<div class="row s-intro__content">
 				<div class="column">
-
-					<div class="text-pretitle">
-						Nice to meet you.
+					<div class="text-pretitle">Nice to meet you</div>
+					<div class="colorfont">
+						<h1 class="slideup">스토리가 있는 브랜딩</h1>
+						<h1 class="slideup">사용성을 높인 인터페이스</h1>
+						<h1 class="slideup">생명을 불어넣어 줄 인터렉션</h1>
+						<h1 class="slideup">풀스텍을 향해 갑니다</h1>
 					</div>
-
-					<h1 class="slideup">
-						스토리가 있는 브랜딩<br>
-						사용자를 고려한 UIUX, <br>
-						익사이팅한 인터렉션<br>
-						풀스텍을 향해 갑니다.
-					</h1>
-					<p class="slideup">I am preparing <br>
-						something exciting <br>
-						& amazing for you.</p>
-
 				</div>
-			</div> <!-- s-intro__content -->
-
-			<div class="s-intro__scroll">
-				<a href="#hidden">
-					Scroll For More
-				</a>
-			</div> <!-- s-intro__scroll -->
+			</div>
 
 		</section> <!-- end s-intro -->
 
-		<section class="introgr">
+
+		<section class="introgr">			
 			<div class="row">
 
 				<div class="column lg-4 md-4 tab-12 back slideup">
-					<h5>시작은 편집디자인으로
-						부터</h5>
-					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+					<h3 class="text-pretitle">strength 1</h3>
+						<h5 class="title">탄탄하게 쌓아올린 디자인 역량</h5>
+						<p>타이포그라피,그리드 디자인,디자인 시스템의 베이스로 타타한 디자인 역량을 갖췄습니다. </p>
 				</div>
 				<div class="column lg-4 md-4 tab-12 back slideup">
-					<h5>시작은 편집디자인으로
-						부터</h5>
-					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+					<h3 class="text-pretitle">strength 2</h3>
+					<h5 class="title">브랜드 아이덴티티와 연속적인 웹 페이지</h5>
+					<p>브랜드 디자인 시스템을 어떤 채널에서든 자유롭고 유연성 있게 확장 가능합니다.</p>
 				</div>
 				<div class="column lg-4 md-4 tab-12 back slideup">
-					<h5>다양한 플랫폼 디자인
-						과 프로토타이핑 구사</h5>
-					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
+					<h3 class="text-pretitle">strength 3</h3>
+					<h5 class="title">다양한 플랫폼 디자인 경험,
+						프로토타이핑</h5>
+					<p>와이어프레임과 프로토타이핑을 통해 정확하고 바르게 소통합니다.</p>
 				</div>
+
 				<div class="introgrback column lg-12 md-12 tab-12"></div>
 
 			</div>
@@ -131,38 +118,47 @@
 			<div class="row">
 				
 				<div class="column lg-6 md-6 tab-12 slideup">
-					<h2 class="title">콘텐츠 기획부터<br>
-						디자인 시스템<br>
-						UIUX까지 디자인<br>
-						전반을 관리</h2>
+
+					<div class="section-header" data-num="01">
+						<h3 class="section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+					</div>
+
+					<h2 class="title">
+						디자인 시스템부터 Ui까지<br>
+						 디자인 전반을 관리</h2>
 					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
 					<div class="project">
 						<ul>
 							<li>nameing</li>
 							<li>C.I, B.I</li>
-							<li>Color system</li>
+							<li>design system</li>
 							<li>advertising</li>
 							<li>book design</li>
 							<li>key visual grapic</li>
 						</ul>
 					</div>
+					
 				</div>
 			
 				<div class="column lg-6 md-6 tab-12">
 					<img src="./images/storyfir_img.png" alt="">
 				</div>
+				
 				<div class="storyfir-bg column lg-12 md-12 tab-12 desktop"></div>
 			</div>
 		</section>
 
 		<!-- storysec2
 		================================================== -->
-		<section class="storysec2">
+		<section class="storysec">
 			<div class="row">
 				
 				<div class="circle column lg-12 md-12 tab-12"></div>
 
 				<div class="mobile">
+					<div class="section-header" data-num="02">
+						<h3 class="section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+					</div>
 					<h2 >다양한 툴을 활용한 영상, 이미지 등 다양한 디자인 리소스제작과 활용</h2>
 					<p>네이밍, C.I, 패키징 디자인, 카피라이팅, 콘텐츠 기획 등 브랜드 런칭에 필요한 디자인 전반을 직접 운영하여 빠르고 효율적인 커뮤니케이션이 가능합니다.</p>
 				</div>
@@ -189,11 +185,13 @@
 	
 		<!-- storysec-white
 		================================================== -->
-		<section class="storysec">
-			<div class="storysec-bg"></div>	
+		<section class="storythi">
+			<div class="storythi-bg"></div>	
 			<div class="row">
 				<div class="column lg-6 md-6 tab-12 slideup">
-					<!-- <h1 class="section-header">2018</h1> -->
+					<div class="section-header" data-num="03">
+						<h3 class="section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+					</div>
 					<h2>그리드 시스템 기반
 						베이직 디자인부터
 						비정형 디자인까지
