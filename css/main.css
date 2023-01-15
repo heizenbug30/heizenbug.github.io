@@ -681,6 +681,7 @@ button.btn--stroke:hover {
 .storythi{
 	background-color: #fff;
 	position: relative;
+	height:100%
 }
 
 .storythi .section-header{	
@@ -697,10 +698,10 @@ button.btn--stroke:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 20vw;
+	width: 20%;
 	height: calc(300 - 10%);
 	position: absolute;
-	top: -10vw;
+	top: -10vh;
 	left: -10vw;
 	z-index: 9999;
 } 
@@ -724,7 +725,7 @@ button.btn--stroke:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 30vw;
+	width: 20%;
 	height: auto;
 	position: absolute;
 	top:-10vw;
