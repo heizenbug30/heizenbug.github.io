@@ -711,32 +711,25 @@ button.btn--stroke:hover {
 }
 
 @media screen and (max-width: 786px){ 
-	.storysec-bg{
-		width: 70vw;
-		height: 50vw;
-		position: relative;
-		left: -5vw;
-	}
-
-p{
+	p{
 	padding-bottom: var(--vspace-1);
-}
+	}
 
 .storythi .story__contet__img img {
 	width: 100%;
 	}
 
-	.storythi-bg{
-		display: block;
-		background-image: url(../images/storyfirsbg.jpg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		width: 50vw;
-		height: 300px;
-		position: relative;
-		top: -200px;
-		z-index: 9999;
+.storythi-bg{
+	display: block;
+	background-image: url(../images/storyfirsbg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 30vw;
+	height: auto;
+	position: relative;
+	top: -200px;
+	z-index: 9999;
 	} 
 }
 
@@ -752,7 +745,6 @@ p{
 
 .wid img{
 	width: 52rem;
-
 }
 
 /* ===================================================================
