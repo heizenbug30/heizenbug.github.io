@@ -654,7 +654,7 @@ a {
 a:focus,
 a:hover,
 a:active {
-  color : var(--color-2);
+  color : var(--color-1);
 }
 
 a:hover,
