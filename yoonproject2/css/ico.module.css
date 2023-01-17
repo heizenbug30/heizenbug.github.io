@@ -1,0 +1,19 @@
+
+/* -------------------------------------------------------------------
+ * ## icon
+ * ------------------------------------------------------------------- */
+
+
+.icosm
+{    display: inline-block;
+  width:18px; height:18px;
+background-image: url(icons/Home.svg); color: blue;}
+
+.icolg {
+    display: inline-block;
+    width:24px; height:24px;
+  background-image: url(icons/Home.svg); color: blue;
+}
+
+.home
+  
