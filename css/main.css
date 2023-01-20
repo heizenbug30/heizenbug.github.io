@@ -265,14 +265,17 @@ button.btn--stroke:hover {
 		background-size: contain;
 	}
 
-	.more-btn .icon.active {
+	.more-btn.active .icon {
+		/* 모바일활성 .active 꼭 붙여쓰기 */
 		background: url(../assets/icon-close.svg)no-repeat center;
 	}
 
-	.main-navigation {
-		position: fixed;
+	.main-navigation {		
+		position: fixed;/* 배경스크롤방지 */
 		top: 0;
-		left: 0;
+		right: 0;
+		transform: translateX(100%);
+		/* left: 0;이 맞지만 애니메이션 적용 */
 		padding: 80px 0;
 		width: 100%;
 		height: 100vh;
@@ -282,8 +285,12 @@ button.btn--stroke:hover {
 	}
 
 	.main-navigation.active {
+		/* 모바일활성 .active 꼭 붙여쓰기 */
 		display: block;
 		opacity: 1;
+		transform: translateX(0);
+		transition: 0.3s;
+
 	}
 
 	.main-navigation a {
@@ -292,7 +299,6 @@ button.btn--stroke:hover {
 	}
 }
 
-@import url(./reset2.css);
 
 /* ===================================================================
  * # INTRO
@@ -806,29 +812,68 @@ button.btn--stroke:hover {
 		  }
 	  }
 
+
 /* ===================================================================
  * # footer
  *
  *
  * ------------------------------------------------------------------- */
+ .s-footer {
+	padding-left: 330px;
+	padding-right: 100px;
+	max-width: 2140px;
+	background-color: #eee;
+  }
 
- footer{
-		/* background-color: var(--color-1); */
-		padding-top: var(--vspace-2_5);
-		padding-bottom: var(--vspace-2_5);
-		
- }
+  .s-footer {
+	padding-top: 4rem;
+	padding-bottom: 8rem;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+  }
+  
+  .s-footer a {
+	color: #000000;
+  }
+  
+  .footer__copyright span {
+	display: inline-block;
+  }
+  
+  .footer__copyright span::after {
+	content: "|";
+	display: inline-block;
+	padding: 0 1.2rem 0 1.4rem;
+	color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer__copyright span:last-child::after {
+	display: none;
+  }
 
- footer h2{
-	margin-top: 0px;
-	margin-bottom: 0px;
- }
-
- footer h3{
-	margin-top: 0px;
-	margin-bottom: var(--vspace-2_5);
- }
-
+  @media screen and (max-width:1600px) {
+	.s-footer {
+	  /* padding-left: 320px; */
+	}
+  }
+  
+  @media screen and (max-width:1200px) {
+	.s-footer {
+	  /* padding-left: 290px; */
+	  padding-right: 80px;
+	}
+  }
+  
+  @media screen and (max-width:1100px) {
+	.s-content,
+	.s-footer {
+	  padding-right: 0;
+	  padding-left: 0;
+	}
+}
+  
  .tool ul li{
 	display: inline-block;
 	width: 40px;
@@ -837,3 +882,103 @@ button.btn--stroke:hover {
  .tool ul li img{
 	width: 100%;
  }
+
+
+ /* ------------------------------------------------------------------- 
+ * ## go to top
+ * ------------------------------------------------------------------- */
+.go-top {
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translate3d(0, 200%, 0);
+	transform: translate3d(0, 200%, 0);
+	transition: all 0.8s;
+	position: fixed;
+	bottom: 4rem;
+	right: 2rem;
+  }
+  
+  .go-top a,
+  .go-top a:visited {
+	text-decoration: none;
+	border: none;
+	display: block;
+	height: 6rem;
+	width: 6rem;
+	line-height: 6rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	transition: all 0.3s;
+	background-image: url(../images/icons/icon-arrow-up.svg);
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 7px 14px;
+  }
+  
+  .go-top.link-is-visible {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+  }
+  
+ 
+/* ------------------------------------------------------------------- 
+ * ## animation stuff 
+ * ------------------------------------------------------------------- */
+.animate-this {
+	opacity: 0;
+	visibility: hidden;
+  }
+  
+  .no-js .animate-this,
+  .no-cssanimations .animate-this {
+	opacity: 1;
+	visibility: visible;
+  }
+  
+  .animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+  }
+  
+  /* fade in */
+  @-webkit-keyframes fadeInUp {
+	from {
+	  opacity: 0;
+	  visibility: hidden;
+	  -webkit-transform: translate3d(0, 150%, 0);
+	  transform: translate3d(0, 150%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  visibility: visible;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  
+  }
+  
+  @keyframes fadeInUp {
+	from {
+	  opacity: 0;
+	  visibility: hidden;
+	  -webkit-transform: translate3d(0, 150%, 0);
+	  transform: translate3d(0, 150%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  visibility: visible;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}  
+  }
