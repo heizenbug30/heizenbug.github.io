@@ -911,7 +911,7 @@ button.btn--stroke:hover {
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.5);
 	transition: all 0.3s;
-	background-image: url(../images/icons/icon-arrow-up.svg);
+	background-image: url(assets/icon-arrow-up.svg);
 	background-color: #000000;
 	background-repeat: no-repeat;
 	background-position: center center;
