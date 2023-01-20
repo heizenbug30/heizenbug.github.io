@@ -150,8 +150,9 @@
     --content-padding-top    : 20vh;
     --content-padding-bottom : 9.6rem;
 
-    --color-1:#EDA97C;
-    --color-2:#00B361;
+	 --color-1:#4D54A5;
+	 --color-2:#598CE5;
+	 --color-3:#FF3428;
 
     --color-body: white;
     --color-text: var(--color-gray-19);
